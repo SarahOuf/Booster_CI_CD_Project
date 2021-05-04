@@ -23,10 +23,10 @@ pipeline {
                     """
                 }
             }
-        }
-        post {
-            success {
-                slackSend (color: "#008000", message: "pipeline is done")
+            post {
+                success {
+                    slackSend (color: "#008000", message: "pipeline is done")
+                }
             }
         }
     }
